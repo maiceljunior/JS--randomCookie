@@ -1,0 +1,724 @@
+body
+{
+    background-image: url(/public/img/Fundo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
+}
+
+
+.header-container
+{
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.ul-header
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+
+.ul-header button 
+{
+    background-color: rgba(0, 0, 0, 0.925);;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+
+}
+
+#guia
+{
+    cursor: wait;
+}
+
+.ul-header #Titulo 
+{
+    
+    background-color: #FCAB40;
+    border-radius: 100px;
+    padding: 20px;
+    color: rgb(42,18,14);
+    font-weight: bold;
+    display: none;
+}
+
+.ul-header #Titulo:hover
+{
+    cursor: help;
+}
+
+.ul-header button:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.biscoito
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.925);;
+    border: 2px solid rgba(0, 0, 0, 0.925);;
+    border-radius: 80px;
+    width: 300px;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+    animation: bisc .4s;
+}
+
+.form-biscoito
+{
+
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-biscoito input 
+{
+    
+    width: 200px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+.form-biscoito button
+{
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, .0);
+    border: none;
+    
+}
+
+.form-biscoito button:hover
+{
+    cursor: url(/public/img/martelo.cur), default;
+}
+
+
+
+.biscoito img
+{
+    max-width: 200px;
+    margin-top: 5%;
+    
+}
+
+.frase-biscoito
+{
+    
+    width: 280px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.925);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.925);;
+    border-radius: 1000px;
+    animation: bisc .4s;
+}
+
+@keyframes bisc
+{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+.frase-biscoito img
+{
+    max-width: 300px;
+    max-height: 200px;
+   
+}
+
+.frase-biscoito h2 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 22px;
+    max-width: 190px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.modal-regras
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal 
+{
+   background-color: rgb(2, 2, 2);
+   color: white; 
+   width: 300px;
+   min-width: 300px;
+   height: 500px;
+   border: none;
+   box-shadow: -2px 8px 12px 59px rgba(0,0,0,0.43);
+   animation: bisc 3s;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   align-items: center;
+}
+
+.guia-modal
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.legenda
+{
+    max-width: 290px;
+    margin: 5% 0 5% 0;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-modal
+{
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-modal:hover
+{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.guia-legenda 
+{
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.details-guia
+{
+    margin-bottom: 10%;
+    color: gold;
+    font-weight: bold;
+    margin-left: 4%;
+}
+
+.sorte
+{
+    color: #FCAB40;
+    font-weight: bold;
+}
+
+.azar 
+{
+    color: crimson;
+    font-weight: bold;
+}
+
+.lembrar
+{
+    color: darkslateblue;
+    font-weight: bold;
+    margin-left: 4%;
+    line-height: 20px;
+}
+
+.login-container
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../img/FundoBody.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.login
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 12px 72px 10px rgb(0 0 0 / 62%);
+    width: 250px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.925);
+    border-radius: 50px;
+
+}
+
+.login span
+{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    color: #FCAB40;
+}
+
+.login input 
+{
+    width: 150px;
+    padding: 10px;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 50px;
+}
+
+.login button
+{
+    background-color: #FCAB40;
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.login button:hover
+{
+    background-color: rgb(87, 87, 92);
+    cursor: pointer;
+}
+
+#LoginNome
+{
+    text-align: center;
+    color: white;
+    width: 230px;
+    font-weight: bold;
+}
+
+#nome-pessoa
+{
+    color: #FCAB40;
+}
+
+.esconder
+{
+    display: none;
+}
+
+@media (min-width: 768px) {
+body
+{
+    background-image:  url(/public/img/Fundo.jpg);
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header-container
+{
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.ul-header
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.ul-header button 
+{
+    background-color: rgba(0, 0, 0, 0.925);
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+#guia
+{
+    cursor: wait;
+}
+
+.ul-header #Titulo 
+{
+    
+    background-color: rgb(200 19 10);
+    border-radius: 100px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    
+}
+
+.ul-header #Titulo:hover
+{
+    cursor: help;
+}
+
+.ul-header button:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.biscoito
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.925);
+    border: 2px solid rgba(0, 0, 0, 0.925);
+    border-radius: 80px;
+    width: 300px;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+    animation: bisc .4s;
+}
+
+.form-biscoito
+{
+
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-biscoito input 
+{
+    
+    width: 200px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+.form-biscoito button
+{
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, .0);
+    border: none;
+    
+}
+
+.form-biscoito button:hover
+{
+    cursor: url(/public/img/martelo.cur), default;
+}
+
+
+
+.biscoito img
+{
+    max-width: 200px;
+    margin-top: 5%;
+    
+}
+
+.frase-biscoito
+{
+    
+    width: 700px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.925);
+    border-radius: 1000px;
+    animation: bisc .4s;
+}
+
+@keyframes bisc
+{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+.frase-biscoito img
+{
+    max-width: 300px;
+    max-height: 200px;
+   
+}
+
+.frase-biscoito h2 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 22px;
+    max-width: 600px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.modal-regras
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal 
+{
+   background-color: rgb(2, 2, 2);
+   color: white; 
+   width: 400px;
+   min-width: 300px;
+   height: 500px;
+   border: none;
+   box-shadow: -2px 8px 12px 59px rgba(0,0,0,0.43);
+   animation: bisc 3s;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   align-items: center;
+}
+
+.guia-modal
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.legenda
+{
+    max-width: 290px;
+    margin: 5% 0 5% 0;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-modal
+{
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-modal:hover
+{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.guia-legenda 
+{
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.details-guia
+{
+    margin-bottom: 10%;
+    color: gold;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.sorte
+{
+    color: #FCAB40;
+    font-weight: bold;
+}
+
+.azar 
+{
+    color: crimson;
+    font-weight: bold;
+}
+
+.lembrar
+{
+    color: darkslateblue;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.login-container
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../img/Fundo.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.login
+{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 12px 72px 10px rgba(0, 0, 0, 0.616);
+    width: 250px;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.925);
+    border-radius: 50px;
+
+}
+
+.login span
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FCAB40;
+}
+
+.login input 
+{
+    width: 150px;
+    padding: 10px;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 50px;
+}
+
+.login button
+{
+    background-color: #FCAB40;
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.login button:hover
+{
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+}
+
+#LoginNome
+{
+    text-align: center;
+    width: 230px;
+    color: white;
+    font-weight: bold;
+}
+
+#nome-pessoa
+{
+    color: #FCAB40;
+}
+
+.esconder
+{
+    display: none;
+}
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biscoito Aleatório</title>
+  <link rel="shortcut icon" href="./public/img/favicon3.jpeg" type="image/x-icon" />
+  <link rel="stylesheet" href="./public/styles/reset.css">
+  <link rel="stylesheet" href="./public/styles/style.css">
+</head>
+
+<body>
+
+  <header class="header-container esconder">
+    <ul class="ul-header">
+      <button id="inicio">Novo Biscoito</button>
+      <span id="Titulo">O que o biscoito reserva para você?</span>
+      <button id="guia">Guia do biscoito</button>
+    </ul>
+  </header>
+
+
+  <main id="main">
+    <section class="login-container">
+      <form class="login">
+        <span>Biscoito Aleatório</span>
+        <input type="text" placeholder="Digite seu nome." maxlength="20" required>
+        <button id="login">Login</button>
+      </form>
+    </section>
+
+
+    <section class="biscoito esconder" id="section-biscoito">
+      <span name="nome-biscoito" class="form-biscoito">
+        <h2 id="LoginNome"></h2>
+        <button id="btnBiscoito"><img id="imgBiscoito" src="/public/img/biscoito.png" alt=""></button>
+        <audio src="./public/audio/biscoitoQuebrando.mp3"></audio>
+      </span>
+    </section>
+
+    <section class="frase-biscoito esconder">
+      <img src="/public/img/biscoitoQuebrado.png" alt="">
+      <h2 id="texto-biscoito"></h2>
+    </section>
+  </main>
+
+  <script type="module" src="/src/app.js"></script>
+
+  <div class="modal-regras esconder" id="modal-regras">
+    <div class="modal">
+      <h2 class="guia-modal">&Oopf; &Lopf; &Aopf; &#128512</h2>
+      <h3 class="guia-modal">Seja bem vindo ao Biscoito Aleatório!</h3>
+      <ol>
+        <details class="details-guia">
+          <Summary>Como jogar?</Summary>
+          <li class="legenda">Informe o seu nome para efetuar o login.</li>
+          <li class="legenda">Use o martelo para quebrar o biscoito.</li>
+          <li class="legenda">Clique em novo biscoito para quebra o biscoito novamente.</li>
+        </details>
+
+        <details class="lembrar">
+          <Summary>Quais são os tipos de biscoitos?</Summary>
+          <li class="legenda">Biscoito da <span class="sorte">sorte</span>.</li>
+          <li class="legenda">Biscoito <span class="azar">Pessimista</span>.</li>
+        </details>
+      </ol>
+
+      <button class="btn-modal">Fechar</button>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
