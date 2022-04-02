@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(/public/img/Fundo.jpg);
+    background-image: url(./public/img/Fundo.jpg);
     font-family: Arial, Helvetica, sans-serif;
     min-width: 300px;
 }
@@ -122,7 +122,7 @@ main
 
 .form-biscoito button:hover
 {
-    cursor: url(/public/img/martelo.cur), default;
+    cursor: url(./public/img/martelo.cur), default;
 }
 
 
@@ -364,7 +364,7 @@ main
 @media (min-width: 768px) {
 body
 {
-    background-image:  url(/public/img/Fundo.jpg);
+    background-image:  url(./public/img/Fundo.jpg);
     background-size: contain;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -485,7 +485,7 @@ main
 
 .form-biscoito button:hover
 {
-    cursor: url(/public/img/martelo.cur), default;
+    cursor: url(./public/img/martelo.cur), default;
 }
 
 
